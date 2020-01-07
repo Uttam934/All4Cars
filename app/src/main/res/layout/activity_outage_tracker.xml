@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activity.Login_Activity">
+
+
+
+    <LinearLayout
+        android:id="@+id/main_title_la"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:id="@+id/forget_outctaker"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/order_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/ic_arrow_back"
+                tools:ignore="contentDescription"/>
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_weight="10"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@mipmap/allforcar"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:layout_gravity="center"
+                android:gravity="left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_17sdp"
+                    android:layout_centerInParent="true"
+                    android:text="Trip Cost Calculator"
+                    android:textColor="@color/white_color"
+                    tools:ignore="RelativeOverlap" />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_below="@+id/main_title_la"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:text="Start Point"
+                android:textColor="@color/black_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="15sp" />
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/username"
+                android:background="@drawable/edittextborder">
+
+                <ImageView
+                    android:id="@+id/passwordImagefr"
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#028A12"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/ic_location" />
+
+
+
+
+                <EditText
+                    android:id="@+id/pickup_startupoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/passwordImagefr"
+                    android:layout_centerVertical="true"
+                    android:textSize="15dp"
+                    android:padding="10sp"
+                    android:editable="false"
+                    android:hint="Choose start Point"
+                    android:textColorHint="@color/black_color"
+                    android:textColor="@color/black_color"
+                    android:background="@null"
+                    />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:text="Destination Point"
+                android:textColor="@color/black_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="15sp" />
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/username"
+                android:background="@drawable/edittextborder">
+
+                <ImageView
+                    android:id="@+id/passwordImagefrd"
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#028A12"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/ic_location" />
+
+
+
+
+                <EditText
+                    android:id="@+id/pickup_distination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/passwordImagefrd"
+                    android:layout_centerVertical="true"
+                    android:textSize="15dp"
+                    android:padding="10sp"
+                    android:editable="false"
+                    android:hint="Choose Destination Point"
+                    android:textColorHint="@color/black_color"
+                    android:textColor="@color/black_color"
+                    android:background="@null"
+                    />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_color"
+                android:textSize="15sp"
+                android:text="Select Fuel"
+                android:editable="false"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/username"
+                android:background="@drawable/edittextborder">
+
+                <ImageView
+                    android:id="@+id/passwordImagedda"
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#028A12"
+                    android:layout_marginStart="10dp"
+                    android:tint="@color/colorAccent"
+                    android:background="@drawable/fuels" />
+
+
+                <Spinner
+                    android:id="@+id/spinner_fuel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black_color"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/doropdownlist"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="4dp"
+                    android:padding="5dp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_color"
+                android:textSize="15sp"
+                android:text="Milage per kilometer"
+                android:editable="false"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/username"
+                android:background="@drawable/edittextborder">
+
+                <ImageView
+                    android:id="@+id/passwordImagedd"
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#028A12"
+                    android:layout_marginStart="10dp"
+                    android:tint="@color/colorAccent"
+                    android:background="@drawable/kilomiter" />
+
+
+                <Spinner
+                    android:id="@+id/spinner_carmilage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black_color"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="4dp"
+                    android:padding="5dp"
+                    android:background="@drawable/doropdownlist"/>
+
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_background"
+                android:text="Calculate"
+                android:visibility="gone"
+                android:layout_below="@+id/texts"
+                android:id="@+id/btn_calculate"
+                android:textAllCaps="false"
+                android:textColor="@color/white_color"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

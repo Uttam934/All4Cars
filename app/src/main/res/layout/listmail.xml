@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="2dip"
+    android:id="@+id/id_list"
+    android:paddingLeft="2dip"
+    android:paddingRight="2dip"
+    android:paddingTop="2dip">
+
+    <ImageView
+        android:id="@+id/imageLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_alignParentLeft="true"
+        android:padding="5dip"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/imageLeft"
+        android:padding="5dip"
+        android:layout_marginRight="30dip"
+
+        />
+
+    <TextView
+        android:id="@+id/byline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_alignLeft="@id/title"
+        android:padding="5dip"
+        />
+
+    <TextView
+        android:id="@+id/published_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/darker_gray"
+        android:drawableLeft="@drawable/ic_date"
+        android:layout_alignBaseline="@id/byline"
+        android:layout_marginRight="30dip"
+        />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+
+        />
+
+</RelativeLayout>

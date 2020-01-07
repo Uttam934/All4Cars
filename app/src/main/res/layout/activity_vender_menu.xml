@@ -1,0 +1,845 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuBar"
+    android:layout_width="match_parent"
+    android:background="@color/menu_color"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="195dp">
+
+        <ImageView
+            android:id="@+id/blur_image_vender"
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/pumpscren"></ImageView>
+
+
+        <FrameLayout
+            android:id="@+id/frame_register_parent"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerInParent="true">
+
+
+            <RelativeLayout
+                android:id="@+id/image_background"
+                android:layout_width="140dp"
+                android:layout_height="140dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/venderuserprofile_image"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="140dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/pumpscren"
+                    app:civ_border_color="@color/white_color"
+                    app:civ_border_width="2dp" />
+
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/relativelayout"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_toRightOf="@+id/frame_register_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/select_img_vender"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="@drawable/circle">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_edit" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/vender_profilename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frame_register_parent"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="Uttam Kumar"
+            android:textStyle="bold"
+            android:textColor="#1ade10"
+            android:textSize="@dimen/_15sdp" />
+
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/list_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="1dp"
+                android:background="@color/menu_color"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/vender_home_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/imagelayout_dashbord"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_home"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/imagelayout_dashbords"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/imagelayout_dashbord"
+                        android:text="Home"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+
+                <RelativeLayout
+                    android:id="@+id/vender_menu_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/manage_lay"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/userlist"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txt_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/manage_lay"
+                        android:text="Profile"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+                <RelativeLayout
+                    android:id="@+id/vender_menu_myaccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profd"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:tint="@color/colorAccent"
+                            android:src="@drawable/myprofile"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profd"
+                        android:text="My Account"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+                <RelativeLayout
+                    android:id="@+id/vender_paymetslip"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profileSetting"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/dollor"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profileSetting"
+                        android:text="Payment History"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+                <RelativeLayout
+                    android:id="@+id/vender_products"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profileSettingLassra"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/bonus"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profileSettingLassra"
+                        android:text="Products list"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+                <RelativeLayout
+                    android:id="@+id/vender_categry"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profileSettingLassraa"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/category"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profileSettingLassraa"
+                        android:text="Category list"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+                <RelativeLayout
+                    android:id="@+id/vender_menu_orderlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profileSettingLassrafd"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:tint="@color/colorAccent"
+                            android:src="@drawable/orderlist"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profileSettingLassrafd"
+                        android:text="Order list"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+                <RelativeLayout
+                    android:id="@+id/vender_menu_orderhistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profileSettingLassrafdd"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:tint="@color/colorAccent"
+                            android:src="@drawable/history"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profileSettingLassrafdd"
+                        android:text="Order History"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+
+
+                </RelativeLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/vender_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profileSettingLassrde"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:tint="@color/colorAccent"
+                            android:src="@drawable/settings"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profileSettingLassrde"
+                        android:text="Setting"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/vender_reconmendation"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profileSettingLae"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="17dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/recomended"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profileSettingLae"
+                        android:text="Recommendation"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/vender_subscription"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profileSs"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:tint="@color/colorAccent"
+                            android:src="@drawable/sabscribe"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profileSs"
+                        android:text="Subscription"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+
+
+                </RelativeLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+                <RelativeLayout
+                    android:id="@+id/vender_menu_contacat_is"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profdsc"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:tint="@color/colorAccent"
+                            android:src="@drawable/ic_local_phone"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profdsc"
+                        android:text="Contact Us"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+                <RelativeLayout
+                    android:id="@+id/vender_menu_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profds"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:tint="@color/colorAccent"
+                            android:src="@drawable/help"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profds"
+                        android:text="Help"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+
+                <RelativeLayout
+                    android:id="@+id/vender_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profileSettingLassrafa"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:tint="@color/colorAccent"
+                            android:src="@drawable/ic_exit"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profileSettingLassrafa"
+                        android:text="Logout"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

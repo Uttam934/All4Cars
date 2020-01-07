@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="colorPrimary">#0624F1</color>
+<color name="colorPrimaryDark">#0624F1</color>
+<color name="colorAccent">#0624F1</color>
+<color name="button_pressed">#028A12</color>
+<color name="button_focused">#03f42f</color>
+<color name="background_color">#028A12</color>
+<color name="hint_color">#949191</color>
+<color name="white_color">#ffffff</color>
+<color name="black_color">#000000</color>
+<color name="bg_tab_text_color">#000000</color>
+<color name="menu_color">#ffffff</color>
+<color name="dark_green">#05544A</color>
+<color name="deep_light_green">#DBF8E8</color>
+<color name="redcolor">#f5061e</color>
+<color name="red">#FF0600</color>
+<color name="tab_btn">#f40468</color>
+<color name="menu_btn">#DBF8E8</color>
+    <color name="placeholder_bg">#dddddd</color>
+<color name="seek_bar_background">#ababab</color>
+<color name="seek_bar_progress">#028A12</color>
+<color name="seek_bar_secondary_progress">#3399CC</color>
+    <color name="light_blue_500">#03a9f4</color>
+    <color name="light_gray">#f0f6f9</color>
+    <color name="light_gray_bar">#eaf2f5</color>
+
+</resources>

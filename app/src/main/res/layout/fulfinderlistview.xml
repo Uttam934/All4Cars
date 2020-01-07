@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/latest_news_card_l"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:cardCornerRadius="5dp"
+        card_view:cardElevation="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardviewbackgound"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/Fuelstaion_logo"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center_vertical"
+               />
+
+
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/deatil_option"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="6.2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/student_img_mychild"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fueualstaion_name"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_height="wrap_content"
+                        android:text="Abhishek Singh"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black_color"/>
+
+                    <TextView
+                        android:id="@+id/fulstion_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="YOU THARA DFASDFASDFSFSDFSDFSDF"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/txt_recent_news"
+                        android:textColor="@color/black_color"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_weight="1.9">
+
+                <LinearLayout
+                    android:id="@+id/Vender_km"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:background="@drawable/button_background"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fulstion_km"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="20.5 Km"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:textColor="@color/white_color"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/braches_list"
+                    android:layout_marginBottom="1dp"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:background="@drawable/button_background"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/braches"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:textColor="@color/white_color"/>
+                    <TextView
+                        android:id="@+id/txt_braches"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Branch"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:textColor="@color/white_color"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">All4Cars</string>
+    <string name="createnewuser"><u>Create New User</u></string>
+    <string name="forgetpasswrd"><u>Forget Password?</u></string>
+    <string name="seekbar_tracking_on">Tracking on</string>
+    <string name="seekbar_tracking_off">Tracking off</string>
+    <string name="seekbar_from_touch">from touch</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="activity_not_locked_text">Nothing should happen on this page, here for test purpose</string>
+    <string name="activity_dialog_title">Forgot you Pincode?</string>
+    <string name="activity_dialog_accept">OK</string>
+    <string name="activity_dialog_decline">CANCEL</string>
+    <string name="activity_dialog_content">Tap \'OK\' you\'ll be able to create a new Pincode.\n\nIf you remember your Pincode, tap \'Cancel\' to go back.</string>
+    <string name="activity_appcompat_message">I am a PinCompatActivity!</string>
+
+    <string name="pin_code_forgot_text">Forgot?</string>
+    <string name="pin_code_step_disable">Disable %d-digit Pincode</string>
+    <string name="pin_code_step_create">Create a %d-digit Pincode</string>
+    <string name="pin_code_step_change">Enter your current %d-digit Pincode</string>
+    <string name="pin_code_step_unlock">Enter your %d-digit Pincode</string>
+    <string name="pin_code_step_enable_confirm">Confirm your %d-digit Pincode</string>
+
+    <string name="pin_code_fingerprint_text">Fingerprint</string>
+    <string name="pin_code_fingerprint_success">Fingerprint recognized</string>
+    <string name="pin_code_fingerprint_not_recognized">Fingerprint not recognized. Try again</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string-array name="option_type">
+        <item>Pending</item>
+        <item>Process</item>
+        <item>Reject</item>
+    </string-array>
+    <string-array name="option_types">
+        <item>All</item>
+        <item>Process</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string-array name="option_feaul">
+        <item>Select Fuel</item>
+        <item>Petrol </item>
+        <item>Diesel </item>
+    </string-array>
+
+    <string-array name="unitopiton">
+        <item>Select Unit</item>
+        <item>Liter</item>
+        <item>Kg</item>
+        <item>Other Type </item>
+    </string-array>
+
+
+    <string-array name="option_milage">
+        <item>Milage per kilometer</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+    </string-array>
+
+
+    <!--// <string name="google_maps_key">AIzaSyCeI-umLpa1dvl4Na2RpMQqa0aCJ2JZAYQ</string>-->
+    <string name="google_maps_key">AIzaSyAB6At98ZBAhzPWv_tdixMpaw2IVbpB7Ak</string>
+</resources>

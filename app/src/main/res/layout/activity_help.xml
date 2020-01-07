@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activity.Login_Activity">
+
+    <LinearLayout
+        android:id="@+id/main_title_la"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:id="@+id/Comparre_back"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/btnsetting"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/ic_arrow_back"
+                tools:ignore="contentDescription"/>
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_weight="10"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@mipmap/allforcar"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:gravity="left">
+
+                <TextView
+                    android:id="@+id/Name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_18sdp"
+                    android:layout_centerInParent="true"
+                    android:text="Help"
+                    android:textColor="@color/white_color"
+                    tools:ignore="RelativeOverlap" />
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:layout_below="@+id/main_title_la"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/btn_background">
+
+
+                <EditText
+                    android:id="@+id/customer_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="16dp"
+                    android:padding="10sp"
+                    android:background="@null"
+                    android:hint="Your Subject"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_background">
+
+
+                <EditText
+                    android:id="@+id/customer_whatapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="16dp"
+                    android:padding="10sp"
+                    android:inputType="number"
+                    android:background="@null"
+                    android:hint="Whatsapp number"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_background">
+
+
+                <EditText
+                    android:id="@+id/customer_Email_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="16dp"
+                    android:padding="10sp"
+                    android:inputType="textEmailAddress"
+                    android:background="@null"
+                    android:hint="Email Id"
+                    />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/customer_message"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="16dp"
+                android:inputType="textMultiLine"
+                android:maxLines="6"
+                android:editable="true"
+                android:enabled="true"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:background="@drawable/btn_background"
+                android:hint="Your Queries"
+                tools:ignore="Deprecated" />
+
+            <!--</RelativeLayout>-->
+
+            <Button
+                android:id="@+id/contact_us_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Submit "
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/btn_adcard"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

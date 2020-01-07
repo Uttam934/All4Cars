@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_mapinfo"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/info_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/user_icon"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_toRightOf="@+id/image_iv"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:text="Title"
+           />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/info_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#1976d2"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:text="distance away">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/info_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#51A7FA"
+        android:textSize="13sp"
+        android:text="mobile number"/>
+    <TextView
+        android:id="@+id/info_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#51A7FA"
+        android:textSize="13sp"
+        android:text="mobile number"/>
+
+</LinearLayout>
+
+
+
+
+   <!-- -->

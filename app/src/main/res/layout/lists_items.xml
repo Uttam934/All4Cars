@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_3sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/paid_or_not"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="5dp"
+        android:layout_margin="1dp"
+        card_view:cardUseCompatPadding="true"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:id="@+id/frammer_name"
+                    android:text="Farmer Nm"
+                     android:textSize="12dp"
+                    android:textColor="@color/black_color" />
+
+
+                <TextView
+                    android:id="@+id/text_mobile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="Mobile"
+                    android:textSize="12dp"
+                    android:textColor="@color/black_color" />
+
+
+                <TextView
+                    android:id="@+id/text_loan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="Lone"
+                    android:textSize="12dp"
+                    android:textColor="@color/black_color" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:id="@+id/qtybrower"
+                    android:text="10"
+                    android:textSize="12dp"
+                    android:textColor="@color/black_color" />
+
+
+                <TextView
+                    android:id="@+id/text_discout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:text="14141"
+                    android:textSize="12dp"
+                    android:textColor="@color/black_color" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+
+               >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#1448CA"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginRight="10dp"
+                    android:tint="@color/colorAccent"
+                    android:background="@drawable/btn_border" />
+                <ImageView
+                    android:id="@+id/borrowe_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#1448CA"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginRight="10dp"
+                    android:tint="@color/colorAccent"
+                    android:background="@drawable/btn_border" />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

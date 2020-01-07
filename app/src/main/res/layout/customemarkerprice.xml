@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_mapinfo"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/info_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/user_icon"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#1976d2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_toRightOf="@+id/image_iv"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:text="Title"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/petrol_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Petrol  Price:"
+                android:textSize="15sp"
+                android:textColor="@color/black_color"/>
+            <TextView
+                android:id="@+id/info_pricepetorl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="114"
+                android:layout_marginLeft="1dp"
+                android:textSize="15sp"
+                android:textColor="@color/black_color"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/desial_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diesel Price: "
+                android:textSize="15sp"
+                android:textColor="@color/black_color"/>
+            <TextView
+                android:id="@+id/txt_desigal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:layout_marginLeft="1dp"
+                android:textSize="15sp"
+                android:textColor="@color/black_color"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/Gas_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gas Price: "
+                android:textSize="15sp"
+                android:textColor="@color/black_color"/>
+            <TextView
+                android:id="@+id/txt_Gas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:layout_marginLeft="1dp"
+                android:textSize="15sp"
+                android:textColor="@color/black_color"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+    <!-- -->

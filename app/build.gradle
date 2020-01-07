@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.allforcars.all4cars"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    dexOptions {
+
+        javaMaxHeapSize "4g"
+        preDexLibraries true
+        dexInProcess = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.4'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.google.code.gson:gson:2.8.4'
+
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
+
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation files('libs/httpmime-4.1.1.jar')
+    implementation files('libs/org.apache.http.legacy.jar')
+    implementation 'com.jeremyfeinstein.slidingmenu:library:1.3@aar'
+
+    implementation 'com.google.firebase:firebase-messaging:17.6.0'
+    implementation 'it.smasini:android-radar:1.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'jp.wasabeef:glide-transformations:2.0.2'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+    implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+
+
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'com.amitshekhar.android:rx2-android-networking:1.0.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+
+
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    implementation 'org.jsoup:jsoup:1.11.1'
+    implementation 'com.balysv:material-ripple:1.0.2'
+
+    implementation 'com.github.omadahealth.typefaceview:typefaceview:1.3.0@aar'
+    implementation 'uk.me.lewisdeane.ldialogs:ldialogs:1.2.0@aar'
+    implementation "android.arch.lifecycle:extensions:1.1.0"
+
+
+    implementation('com.github.orangegangsters:lollipin:2.0.0@aar') {
+        transitive = true
+    }
+
+    configurations.all {
+        exclude group: 'com.android.support', module: 'support-v13'
+    }
+
+
+}
+
+apply plugin: 'com.google.gms.google-services'

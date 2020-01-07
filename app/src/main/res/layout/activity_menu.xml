@@ -1,0 +1,1002 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuBar"
+    android:layout_width="match_parent"
+    android:background="@color/menu_color"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="195dp">
+
+        <ImageView
+            android:id="@+id/blur_image"
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/pumpscren"></ImageView>
+
+
+        <FrameLayout
+            android:id="@+id/frame_register_parent"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerInParent="true">
+
+
+            <RelativeLayout
+                android:id="@+id/image_background"
+                android:layout_width="140dp"
+                android:layout_height="140dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/userprofile_image"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="140dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/pumpscren"
+                    app:civ_border_color="@color/white_color"
+                    app:civ_border_width="2dp" />
+
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/relativelayout"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_toRightOf="@+id/frame_register_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/select_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="@drawable/circle">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_edit" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/user_profilename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frame_register_parent"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="Uttam Kumar"
+            android:textStyle="bold"
+            android:textColor="#1ade10"
+            android:textSize="@dimen/_15sdp" />
+
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/list_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/menu_color"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/home_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/imagelayout_dashbord"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_home"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/imagelayout_dashbords"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/imagelayout_dashbord"
+                        android:text="Home"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+
+                <RelativeLayout
+                    android:id="@+id/menu_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/manage_lay"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_profile"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txt_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/manage_lay"
+                        android:text="Profile"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent"
+                     />
+
+                <RelativeLayout
+                    android:id="@+id/Gas_pricemap"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/manage_invest_lay"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/gasprice"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/manage_invest_lay"
+                        android:text="Petrol/Diesel/Gas Map"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>  <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorAccent"
+                />
+
+                <RelativeLayout
+                    android:id="@+id/Compare_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/manage_cmpreprice"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/fuel"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/manage_cmpreprice"
+                        android:text="Compare prices"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+
+                <RelativeLayout
+                    android:id="@+id/menu_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profileSettingLassra"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/history"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profileSettingLassra"
+                        android:text="Order History"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+
+                <RelativeLayout
+                    android:id="@+id/menu_loyaliyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profd"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/bonus"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profd"
+                        android:text="Bonus"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+
+                <RelativeLayout
+                    android:id="@+id/menu_bonus_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/li_bonus_setting"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/loyality"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/li_bonus_setting"
+                        android:text="Loyalty"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+
+                <RelativeLayout
+                    android:id="@+id/menu_catogtrancker"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profileSettingLassraf"
+                        android:layout_width="22dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/outagetacker"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profileSettingLassraf"
+                        android:text="Trip Cost Calculator"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:visibility="gone"
+                    android:background="@color/colorAccent" />
+
+                <RelativeLayout
+                    android:id="@+id/menu_bonus_reddem"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:visibility="gone"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/li_bonus_setg"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/history"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/li_bonus_setg"
+                        android:text="Redeem History"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+
+
+                <RelativeLayout
+                    android:id="@+id/change_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profileSettingLassrde"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/setting"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profileSettingLassrde"
+                        android:text="Setting"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+
+
+                <RelativeLayout
+                    android:id="@+id/menu_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profds"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/help"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profds"
+                        android:text="Help"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+
+
+                <RelativeLayout
+                    android:id="@+id/menu_recomended"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profdssfs"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/recomended"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profdssfs"
+                        android:text="Recommend/Referral User"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+
+
+                <RelativeLayout
+                    android:id="@+id/menu_howtouse"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profdssfssd"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/faq"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profdssfssd"
+                        android:text="How to Use"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+
+
+                <RelativeLayout
+                    android:id="@+id/menu_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profdsadf"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/description"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profdsadf"
+                        android:text="Report"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+
+
+                <RelativeLayout
+                    android:id="@+id/menu_faq"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profdssf"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/faq"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profdssf"
+                        android:text="FAQ"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+
+
+                <RelativeLayout
+                    android:id="@+id/menu_privacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/privacy_policy"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/privacypolicy"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/privacy_policy"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+
+                <RelativeLayout
+                    android:id="@+id/menu_aboutus"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profdsd"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_local_phone"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profdsd"
+                        android:text="Contact Us"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+
+                <RelativeLayout
+                    android:id="@+id/user_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/menu_color"
+                    android:padding="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/profileSettingLassrafa"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_exit"
+                            android:tint="@color/colorAccent"
+                            tools:ignore="contentDescription" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/profileSettingLassrafa"
+                        android:text="Logout"
+                        android:textColor="@color/bg_tab_text_color"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

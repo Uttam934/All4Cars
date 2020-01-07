@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_180sdp"
+    android:minWidth="80px"
+    android:minHeight="80px"
+    android:background="@drawable/btn_background">
+
+
+    <RelativeLayout
+        android:id="@+id/radio_g"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="22sp"
+            android:textColor="@color/white_color"
+            android:text="Trip Cost Details"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_g"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total Distance"
+                    android:textSize="16sp"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black_color"/>
+
+                <TextView
+                    android:id="@+id/total_distance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="$5"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_color"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total Price in liter "
+                    android:textSize="16sp"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black_color"/>
+
+                <TextView
+                    android:id="@+id/total_priceinltr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="$10"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_color"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total Trip Cost"
+                    android:textSize="16sp"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black_color"/>
+
+                <TextView
+                    android:id="@+id/total_costtrip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="$5"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_color"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total Time "
+                    android:textSize="16sp"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black_color"/>
+
+                <TextView
+                    android:id="@+id/total_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="$5"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_color"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

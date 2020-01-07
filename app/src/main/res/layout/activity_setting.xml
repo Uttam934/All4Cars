@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activity.Login_Activity">
+
+
+
+    <LinearLayout
+        android:id="@+id/main_title_la"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:id="@+id/forget_backbtn"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/btnsetting"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/ic_arrow_back"
+                tools:ignore="contentDescription"/>
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_weight="10"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@mipmap/allforcar"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:gravity="left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_18sdp"
+                    android:layout_centerInParent="true"
+                    android:text="Settings"
+                    android:textColor="@color/white_color"
+                    tools:ignore="RelativeOverlap" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+   <LinearLayout
+       android:layout_below="@+id/main_title_la"
+       android:layout_width="match_parent"
+       android:layout_marginTop="@dimen/_10sdp"
+       android:layout_marginLeft="@dimen/_5sdp"
+       android:layout_marginRight="@dimen/_5sdp"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:gravity="center"
+        android:id="@+id/changepassod"
+        android:background="@drawable/button_background"
+        android:layout_height="@dimen/_40sdp">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+          android:layout_weight="9"
+        android:text="Change Password"
+          android:gravity="center"
+        android:textColor="@color/white_color"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/white_color"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/arrowright"
+            tools:ignore="contentDescription"/>
+
+
+
+
+
+    </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:weightSum="10"
+           android:id="@+id/updatefilrile"
+           android:layout_marginTop="@dimen/_8sdp"
+           android:gravity="center"
+           android:background="@drawable/button_background"
+           android:layout_height="@dimen/_40sdp">
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="9"
+               android:text="Update Profile"
+               android:gravity="center"
+               android:textColor="@color/white_color"
+               android:textAllCaps="false"
+               android:textSize="18sp" />
+
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="10dp"
+               android:backgroundTint="@color/white_color"
+               android:layout_alignParentLeft="true"
+               android:background="@drawable/arrowright"
+               tools:ignore="contentDescription"/>
+
+
+
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:weightSum="10"
+           android:id="@+id/kmsetting"
+           android:layout_marginTop="@dimen/_8sdp"
+           android:gravity="center"
+           android:background="@drawable/button_background"
+           android:layout_height="@dimen/_40sdp">
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="9"
+               android:text="Near By Vendor(KM)"
+               android:gravity="center"
+               android:textColor="@color/white_color"
+               android:textAllCaps="false"
+               android:textSize="18sp" />
+
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="10dp"
+               android:backgroundTint="@color/white_color"
+               android:layout_alignParentLeft="true"
+               android:background="@drawable/arrowright"
+               tools:ignore="contentDescription"/>
+
+
+
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:weightSum="10"
+           android:id="@+id/Notification"
+           android:layout_marginTop="@dimen/_8sdp"
+           android:gravity="center"
+           android:background="@drawable/button_background"
+           android:layout_height="@dimen/_40sdp">
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="9"
+               android:text="Notification"
+               android:gravity="center"
+               android:textColor="@color/white_color"
+               android:textAllCaps="false"
+               android:textSize="18sp" />
+
+
+
+           <android.support.v7.widget.SwitchCompat
+               android:id="@+id/simpleSwitchs"
+               android:layout_width="wrap_content"
+               android:layout_alignParentRight="true"
+               android:checked="false"
+               android:visibility="gone"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               app:theme="@style/Color1SwitchStyle"
+               android:textAppearance="?android:attr/textAppearanceMedium"
+               />
+
+
+
+           <android.support.v7.widget.SwitchCompat
+               android:id="@+id/simpleSwitch"
+               android:layout_width="wrap_content"
+               android:layout_height="46dp"
+               android:layout_alignParentEnd="true"
+               android:checked="true"
+               android:longClickable="false"
+               android:textOff="off"
+               android:textOn="on"
+               app:theme="@style/Color1SwitchStyle"
+               android:textAppearance="?android:attr/textAppearanceMedium"
+               app:showText="true" />
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+</RelativeLayout>

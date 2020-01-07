@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="50px"
+    android:minHeight="50px"
+    android:background="@drawable/btn_background">
+
+
+    <RelativeLayout
+        android:id="@+id/radio_g"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="22sp"
+            android:textColor="@color/white_color"
+            android:text="Change Order Status"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/radio_gd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_g"
+        android:orientation="vertical">
+
+
+    <RadioGroup
+        android:id="@+id/radio_gr_lan_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/radio_g"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_Process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/black_color"
+            android:text="Process"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/colorAccent" />
+
+        <RadioButton
+            android:id="@+id/rb_Rejected"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_11sdp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_color"
+            android:text="Cancel"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/colorAccent" />
+
+
+
+        <RadioButton
+            android:id="@+id/rb_Complete"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_color"
+            android:text="Complete"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/colorAccent" />
+
+    </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/usremailsf"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/username"
+            android:background="@drawable/edittextborder">
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/edittxt_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/passwordImagef"
+                android:layout_centerVertical="true"
+                android:textSize="16dp"
+                android:hint=" Enter reason"
+                android:textColorHint="@color/black_color"
+                android:textColor="@color/black_color"
+                android:background="@null"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_below="@+id/radio_gr_lan_login"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:background="@drawable/btn_background">
+
+            <TextView
+                android:id="@+id/txt_submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Submit"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textSize="@dimen/_18sdp"
+                android:textColor="@color/white_color"/>
+
+        </RelativeLayout>
+
+
+</LinearLayout>
+</RelativeLayout>

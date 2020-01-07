@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.allforcars.all4cars">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".classes.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".AsyncTaskGETPOST.Asantask_Activity"></activity>
+        <activity android:name=".Test.TestLargeAPI.Code.Datalist_Activity" />
+        <activity android:name=".Test.SarchlistRecyler.Borwer_Activity" />
+        <activity android:name=".Test.MaterialShowcaseSequence.MaterialShowcaseSequence" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".Test.Bitmapcamer.Bitmapcamer_Activity" /> <!-- <activity android:name=".Test.Retrofit_Rxjava.Spineer_Activity"></activity> -->
+        <!-- <activity android:name=".Test.Retrofit_Rxjava.Recylrlargeapi_Activity" /> -->
+        <activity android:name=".Test.Retrofit_Rxjava.Savedate_Activity" />
+        <activity android:name=".Test.Expendedlist.Expendedlist" />
+        <activity android:name=".Test.PinLock.CustomSetPinActivity" />
+        <activity android:name=".Test.TestLargeAPI.Code.Recylrlargeapi_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Activity.Signup_Activity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".Activity.Forgetpassword_Activity" />
+        <activity
+            android:name=".Activity.Home_Activity"
+            android:launchMode="singleTask" />
+        <activity android:name=".Test.Add_Activity" />
+        <activity android:name=".Test.Check_Version" />
+        <activity android:name=".Activity.MenuActivity" />
+        <activity
+            android:name=".Activity.UserProfile_Activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.EditProfile_Activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Activity.Changepassword_Activity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <service
+            android:name=".classes.apicall.GetAddressIntentService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Activity.GasPrice_Map_Activity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".Activity.Filter_Activity" />
+        <activity
+            android:name=".Activity.Deatail_Activity"
+            android:launchMode="singleTask" />
+        <activity android:name=".Activity.Mycart_Activity" /> <!-- Firebase Notifications -->
+        <service android:name=".service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- ./Firebase Notifications -->
+        <activity android:name=".Activity.Setting_Activity" />
+        <activity
+            android:name=".Activity.OutageTracker_Activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.Bonus_Activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.Help_Activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Activity.History_Activity" />
+        <activity android:name=".Activity.Payment_Activity" />
+        <activity android:name=".Venderlogin.Activity.Vender_Home_Activity" />
+        <activity android:name=".Venderlogin.Activity.Vender_Menu_Activity" />
+        <activity
+            android:name=".Venderlogin.Activity.Vender_Profile_Activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Venderlogin.Activity.Vender_Changepssword_Activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Venderlogin.Activity.Vender_Setting_Activity" />
+        <activity
+            android:name=".Venderlogin.Activity.VenderPorfileupdate_Activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Venderlogin.Activity.ProductService_Activity" />
+        <activity
+            android:name=".Venderlogin.Activity.EditProduct_Activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Venderlogin.Activity.VenderCategory_Activity" />
+        <activity
+            android:name=".Venderlogin.Activity.AddProduct_Activity"
+            android:launchMode="singleTask" />
+        <activity android:name=".Venderlogin.Activity.Vender_Payment_Activity" />
+        <activity android:name=".Venderlogin.Activity.Vender_Transaction_Activity" />
+        <activity android:name=".Activity.OrderDeatil_Activity" />
+        <activity android:name=".Venderlogin.Activity.Orderlist_Activity" />
+        <activity android:name=".Venderlogin.Activity.Orderdeatil_Activity" />
+        <activity android:name=".Activity.Bonus_Settings_Activity" />
+        <activity android:name=".Activity.User_Notification_Activity" />
+        <activity android:name=".Activity.RedmeeHistory_Activity" />
+        <activity android:name=".Venderlogin.Activity.VenderOrderHistory_Activity" />
+        <activity android:name=".Venderlogin.Activity.Contactus_Activity" />
+        <activity android:name=".Activity.TripcostDeatil_Activity" />
+        <activity android:name=".Activity.Faq_Activity" />
+        <activity android:name=".Activity.PrivacyPolicy_Activity" />
+        <activity android:name=".Activity.Loyalaty_Activity" />
+        <activity android:name=".Activity.LoyatliyHistoy_Activity" />
+        <activity android:name=".Activity.Km_Setting_Activity" />
+        <activity android:name=".Activity.ComparePrice_Activity" />
+        <activity android:name=".Venderlogin.Activity.Paymentslip_Activity" />
+        <activity
+            android:name=".Activity.Recommend_user_Activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.UserReport_Activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.Rating_Activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Activity.Branchlist_Activity" />
+        <activity android:name=".Activity.Howtouse_Activity" />
+        <activity
+            android:name=".Venderlogin.Activity.Subscription_Activity"
+            android:windowSoftInputMode="stateHidden" />
+    </application>
+
+</manifest>

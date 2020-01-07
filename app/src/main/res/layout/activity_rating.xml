@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activity.Recommend_user_Activity">
+
+
+    <LinearLayout
+        android:id="@+id/main_title_la"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:id="@+id/backbtn_contactus"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/order_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/ic_arrow_back"
+                tools:ignore="contentDescription"/>
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_weight="10"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@mipmap/allforcar"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:gravity="left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_16sdp"
+                    android:layout_centerInParent="true"
+                    android:text="Feedback"
+                    android:textColor="@color/white_color"
+                    tools:ignore="RelativeOverlap" />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_title_la"
+        android:fillViewport="true">
+
+
+    <LinearLayout
+        android:id="@+id/parent_layout_rating_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/profile_img_rating_profile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/member_image_rating_profile"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    app:civ_border_width="2dp"
+                    android:src="@drawable/dollor"
+                    app:civ_border_color="#29d407"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/user_name_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User NAME"
+                android:textSize="15sp"
+                android:gravity="left"
+                android:layout_centerInParent="true"
+                android:textColor="#123"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/profile_img_rating_profile"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/child_layout_ratinf_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custometextcolor"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="10dp">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <RatingBar
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:saveEnabled="true"
+                    android:numStars="5"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/comment_rating_profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custometextcolor"
+                android:hint="Comment"
+                android:textColorHint="@color/black_color"
+                android:padding="10dp"
+                android:src="@android:color/transparent"
+                android:textColor="#123"
+                android:textCursorDrawable="@drawable/border_text"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_background"
+            android:text="POST"
+            android:id="@+id/txt_post"
+            android:textAllCaps="false"
+            android:textColor="@color/white_color"
+            android:textSize="18sp" />
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
